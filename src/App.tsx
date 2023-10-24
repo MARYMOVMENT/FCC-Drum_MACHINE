@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import './App.css';
 import { AudioClip } from "./types";
 import Drum from './Drum';
@@ -56,7 +56,7 @@ const AudioClips: AudioClip[] = [
 
 function App() {
 
-  const playAudio = (e: React.KeyboardEvent <HTMLAudioElement>) => {
+  const playAudio = (e: React.KeyboardEvent <HTMLDivElement>) => {
   const clip = AudioClips.find(
     (clip) => clip.keyTrigger === e.key.toUpperCase()
   );
